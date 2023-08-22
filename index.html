@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div>
+      <h1>How many years will it take ?</h1>
+
+      <div class="column-container">
+        <h3 class="column">For permanent residence you will need:</h3>
+        <h3 class="column">Now u have:</h3>
+        <h3 class="column">For citizenship of Czech Republic you will need:</h3>
+      </div>
+
+      <div class="column-container">
+        <div class="column">
+          <h2>7 years</h2>
+          <p>
+            <a
+              href="https://www.mvcr.cz/clanek/obcane-tretich-zemi-dlouhodoby-pobyt.aspx"
+              >More information about permanent residence</a
+            >
+          </p>
+        </div>
+        <h2 class="column" id="count-el">0</h2>
+        <div class="column">
+          <h2>10 years</h2>
+          <p>
+            <a
+              href="https://www.mvcr.cz/clanek/informace-k-novemu-zakonu-o-statnim-obcanstvi-cr.aspx"
+            >
+              More information about citizenship of CR
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <h4>
+        Enter the exact number of years lived in the Czech Republic and for what
+        purpose
+      </h4>
+
+      <div class="input-container">
+        <div class="input-wrapper">
+          <label for="study">Years at university:</label>
+          <input
+            type="number"
+            id="studyU-y"
+            name="study"
+            onchange="calculate()"
+          />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="work">Years on the job:</label>
+          <input type="number" id="work-y" name="work" onchange="calculate()" />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="course">Years on the course:</label>
+          <input
+            type="number"
+            id="studyC-y"
+            name="course"
+            onchange="calculate()"
+          />
+        </div>
+      </div>
+
+      <button id="reset-button">Reset Inputs</button>
+
+      <p id="calc-el">Previous entries:</p>
+    </div>
+
+    <footer>
+      <p>Disclaimer:The information may be different, it all depends on the individual case.</br> If you find a bug or have ideas to improve the site - <a href="tg://resolve?domain=vvladver">write me</a>  </br> All information was taken from - <a href="https://www.mvcr.cz/ministerstvo-vnitra-ceske-republiky.aspx">MVČR</a></p>
+
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
