@@ -4,6 +4,13 @@ let inputElY = document.getElementById("studyU-y")
 let inputElW = document.getElementById("work-y")
 let inputElC = document.getElementById("studyC-y")
 
+
+document.getElementById('studyU-y').value = '0';
+    document.getElementById('work-y').value = '0';
+    document.getElementById('studyC-y').value = '0';
+    document.getElementById('count-el').textContent = '0';
+
+
 /*let count = 0*/
 
 /*function getNumber() {
@@ -41,5 +48,5 @@ document.getElementById('reset-button').addEventListener('click', function() {
   
 
 
-//Designe 
-//Footer with diskleimer 
+//Design https://coolors.co/palette/177e89-084c61-db3a34-ffc857-323031
+//Write in git cousre and what ive done 
